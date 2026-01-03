@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Основные SEO метатеги -->
+    <title>BuildMaster - Магазин строительных материалов | Доставка по всей России</title>
+    <meta name="description" content="BuildMaster - интернет-магазин строительных материалов с доставкой. Широкий ассортимент: цемент, кирпич, пиломатериалы, кровля, инструменты. Гарантия качества, низкие цены.">
+    <meta name="keywords" content="строительные материалы, купить стройматериалы, интернет-магазин строительства, доставка стройматериалов, цемент, кирпич, пиломатериалы, кровля, инструменты">
+    
+    <!-- Open Graph для соцсетей (Facebook, ВКонтакте и др.) -->
+    <meta property="og:title" content="BuildMaster - Магазин строительных материалов">
+    <meta property="og:description" content="Все для строительства и ремонта с доставкой по всей России. Гарантия качества, лучшие цены.">
+    <meta property="og:image" content="https://dunw1n.github.io/BuildMaster-Lending/preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://dunw1n.github.io/BuildMaster-Lending/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BuildMaster">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BuildMaster - Магазин строительных материалов">
+    <meta name="twitter:description" content="Все для строительства и ремонта с доставкой по всей России.">
+    <meta name="twitter:image" content="https://dunw1n.github.io/BuildMaster-Lending/preview.jpg">
+    
+    <!-- Дополнительные SEO метатеги -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="BuildMaster">
+    <meta name="copyright" content="BuildMaster">
+    <meta name="theme-color" content="#1a5fb4">
+    
+    <!-- Каноническая ссылка -->
+    <link rel="canonical" href="https://dunw1n.github.io/BuildMaster-Lending/">
+    
+    <!-- Фавиконы и иконки -->
+    <link rel="icon" type="image/x-icon" href="https://dunw1n.github.io/BuildMaster-Lending/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dunw1n.github.io/BuildMaster-Lending/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://dunw1n.github.io/BuildMaster-Lending/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dunw1n.github.io/BuildMaster-Lending/favicon.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    
+    <!-- Веб-шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper для слайдеров -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+    <!-- Header -->
+  <header id="header">
+        <div class="container header-container">
+            <a href="./index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="logo-text">Build<span>Master</span></div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню" aria-expanded="false">
+                <span class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            
+            <nav class="nav" aria-label="Основная навигация">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="./index.html#home" class="nav-link">Главная</a></li>
+                    <li><a href="./index.html#categories" class="nav-link">Категории</a></li>
+                    <li><a href="./index.html#products" class="nav-link">Товары</a></li>
+                    <li><a href="./index.html#about" class="nav-link">О компании</a></li>
+                    <li><a href="./index.html#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="btn btn-primary call-btn">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="btn-text">Заказать звонок</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- Product Main Section -->
+    <section class="product-main">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-main">
+                        <div class="main-image">
+                            <img src="./assets/images/none/noneimage.png" alt="Штукатурка гипсовая Knauf Ротбанд" id="mainImage">
+                        </div>
+                        <div class="product-badge hit">
+                            <i class="fas fa-fire"></i>
+                            Хит продаж
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-thumbs">
+                        <div class="thumb-item active" data-image="./assets/images/none/noneimage.png">
+                            <img src="./assets/images/none/noneimage.png" alt="Фото товара 1">
+                        </div>
+                        <div class="thumb-item" data-image="./assets/images/none/noneimage.png">
+                            <img src="./assets/images/none/noneimage.png" alt="Фото товара 2">
+                        </div>
+                        <div class="thumb-item" data-image="./assets/images/none/noneimage.png">
+                            <img src="./assets/images/none/noneimage.png" alt="Фото товара 3">
+                        </div>
+                        <div class="thumb-item" data-image="./assets/images/none/noneimage.png">
+                            <img src="./assets/images/none/noneimage.png" alt="Фото товара 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1 class="product-title">Штукатурка гипсовая Knauf Ротбанд</h1>
+                        <div class="product-meta">
+                            <span class="product-category">Смеси</span>
+                            <span class="product-sku">Артикул: KNAUF-ROTBAND-30</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-value">4.7</span>
+                                <span class="reviews-count">(128 отзывов)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Высококачественная гипсовая штукатурка для ручного нанесения. Идеально подходит для выравнивания стен и потолков внутри помещений с нормальной влажностью.</p>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Высокая прочность</h4>
+                                <p>Прочность на сжатие ≥ 2,5 МПа</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tint"></i>
+                            <div>
+                                <h4>Влагостойкость</h4>
+                                <p>Подходит для помещений с нормальной влажностью</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Быстрое высыхание</h4>
+                                <p>Высыхает за 7 дней при толщине слоя 10 мм</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-weight"></i>
+                            <div>
+                                <h4>Экономичный расход</h4>
+                                <p>8.5 кг/м² при толщине слоя 10 мм</p>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-details">
+        <div class="container">
+            <div class="details-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Описание</button>
+                    <button class="tab-btn" data-tab="specifications">Характеристики</button>
+                    <button class="tab-btn" data-tab="application">Применение</button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Описание -->
+                    <div class="tab-content active" id="description">
+                        <div class="content-block">
+                            <h3>О товаре</h3>
+                            <p>Штукатурка гипсовая Knauf Ротбанд - это высококачественная сухая строительная смесь на гипсовой основе с полимерными добавками. Предназначена для высококачественного оштукатуривания стен и потолков внутри помещений с нормальной влажностью.</p>
+                            <p>Материал обладает отличной адгезией, легко наносится и разравнивается. После высыхания образует гладкую поверхность, готовую для финишной отделки (покраски, оклейки обоями).</p>
+                        </div>
+                        
+                        <div class="content-block">
+                            <h3>Преимущества</h3>
+                            <div class="advantages-grid">
+                                <div class="advantage">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Не дает усадки</span>
+                                </div>
+                                <div class="advantage">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Пластичная и удобная в работе</span>
+                                </div>
+                                <div class="advantage">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Высокая паропроницаемость</span>
+                                </div>
+                                <div class="advantage">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Экономичный расход</span>
+                                </div>
+                                <div class="advantage">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Экологически безопасный</span>
+                                </div>
+                                <div class="advantage">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Не требует шпатлевания</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Характеристики -->
+                    <div class="tab-content" id="specifications">
+                        <div class="specs-table">
+                            <div class="spec-row">
+                                <div class="spec-name">Бренд</div>
+                                <div class="spec-value">Knauf</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Страна производства</div>
+                                <div class="spec-value">Россия</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Вес упаковки</div>
+                                <div class="spec-value">30 кг</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Цвет</div>
+                                <div class="spec-value">Серый</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Прочность на сжатие</div>
+                                <div class="spec-value">≥ 2,5 МПа</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Расход при слое 10 мм</div>
+                                <div class="spec-value">8.5 кг/м²</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Толщина слоя</div>
+                                <div class="spec-value">5-50 мм</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Время жизни раствора</div>
+                                <div class="spec-value">25 минут</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Температура применения</div>
+                                <div class="spec-value">+5°C до +30°C</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-name">Срок годности</div>
+                                <div class="spec-value">12 месяцев</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Применение -->
+                    <div class="tab-content" id="application">
+                        <div class="content-block">
+                            <h3>Область применения</h3>
+                            <p>Штукатурка Knauf Ротбанд применяется для:</p>
+                            <ul class="application-list">
+                                <li>Выравнивания стен и потолков из бетона, кирпича, пенобетона</li>
+                                <li>Оштукатуривания поверхностей в помещениях с нормальной влажностью</li>
+                                <li>Подготовки поверхностей под покраску или оклейку обоями</li>
+                                <li>Ремонтных работ в жилых и общественных помещениях</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="content-block">
+                            <h3>Инструкция по применению</h3>
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Подготовка поверхности</h4>
+                                        <p>Очистить поверхность от пыли, грязи, масляных пятен. Сильно впитывающие основания обработать грунтовкой.</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Приготовление раствора</h4>
+                                        <p>На 1 мешок (30 кг) добавить 18-20 литров чистой воды. Перемешивать до получения однородной массы без комков.</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Нанесение</h4>
+                                        <p>Наносить штукатурку слоем 5-50 мм с помощью шпателя или кельмы. Разравнивать правилом.</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Затирка</h4>
+                                        <p>Через 15-20 минут после нанесения затереть поверхность губчатой теркой.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Похожие товары</h2>
+                <p class="section-description">Другие материалы, которые могут вас заинтересовать</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/none/noneimage.png" alt="Цемент М500">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Цемент М500 Д0</h3>
+                        <p class="product-description">Высококачественный цемент для ответственных работ</p>
+                        <div class="product-footer">
+                            <div class="product-price">450 ₽ <small>/ 30 кг</small></div>
+                            <a href="./index.html#products" class="view-details">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/none/noneimage.png" alt="Штукатурка цементная">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Штукатурка цементная Knauf Грюнбанд</h3>
+                        <p class="product-description">Теплоизоляционная штукатурка для фасадов</p>
+                        <div class="product-footer">
+                            <div class="product-price">520 ₽ <small>/ 30 кг</small></div>
+                            <a href="./index.html#products" class="view-details">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/images/none/noneimage.png" alt="Шпатлевка гипсовая">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Шпатлевка гипсовая Knauf Фуген</h3>
+                        <p class="product-description">Для заделки швов гипсокартонных листов</p>
+                        <div class="product-footer">
+                            <div class="product-price">380 ₽ <small>/ 25 кг</small></div>
+                            <a href="./index.html#products" class="view-details">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+     <footer class="section" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="logo-text">Build<span>Master</span></div>
+                    </a>
+                    <p class="footer-description">Ведущий поставщик строительных материалов в регионе. Качество, надежность и доступные цены.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Категории</h3>
+                    <ul class="footer-links">
+                        <li><a href="./product.html"><i class="fas fa-chevron-right"></i> Кирпичи и блоки</a></li>
+                        <li><a href="./product.html"><i class="fas fa-chevron-right"></i> Пиломатериалы</a></li>
+                        <li><a href="./product.html"><i class="fas fa-chevron-right"></i> Смеси и клей</a></li>
+                        <li><a href="./product.html"><i class="fas fa-chevron-right"></i> Кровельные материалы</a></li>
+                        <li><a href="./product.html"><i class="fas fa-chevron-right"></i> Инструменты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Строителей, 15, офис 305</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@buildmaster.ru</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Пт: 9:00-20:00<br>Сб-Вс: 10:00-18:00</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Новостная рассылка</h3>
+                    <p class="footer-description">Подпишитесь, чтобы первыми узнавать о скидках и новинках</p>
+                    <form class="newsletter-form" id="subscribeForm">
+                        <input type="email" class="newsletter-input" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Подписаться
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 BuildMaster. Все права защищены. Информация предоставленная на сайте является выдуманой. Сайт разработан Olma-студией в коммерческих целях</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="notification-toast" id="notificationToast"></div>
+
+    <script type="module" src="./js/product.js"></script>
+</body>
+</html>
