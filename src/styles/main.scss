@@ -1000,6 +1000,16 @@ footer {
   font-size: 14px;
 }
 
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+    img {
+      height: 20px;
+    }
+} 
+
 /* Responsive */
 @media (max-width: 1023px) {
   header {
@@ -1155,7 +1165,25 @@ footer {
   .header-actions {
     gap: 8px;
   }
+
+  .footer__copyright {
+      flex-direction: column;
+      row-gap: 10px;
+  }
+
+  //tabs
+
+  .tabs-header {
+    flex-direction: column;
+  }
+
+  .tabs-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
+
 
 /* Small Mobile (до 479px) */
 @media (max-width: 479px) {
