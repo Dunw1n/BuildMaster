@@ -1,4 +1,3 @@
-// Главный класс приложения - работает на всех страницах
 class BuildMasterApp {
     constructor() {
         this.init();
@@ -309,11 +308,9 @@ class BuildMasterApp {
     }
 }
 
-// Инициализация приложения при загрузке DOM
 document.addEventListener('DOMContentLoaded', () => {
     const app = new BuildMasterApp();
     console.log('BuildMaster app initialized!');
 });
 
-// Экспортируем класс для использования в других файлах
 export { BuildMasterApp };

@@ -24,8 +24,6 @@ class ProductPage extends BuildMasterApp {
                 thumbItems.forEach(item => item.classList.remove('active'));
                 
                 thumb.classList.add('active');
-                
-                // Меняем основное изображение
                 const newImage = thumb.dataset.image;
                 mainImage.src = newImage;
                 mainImage.alt = thumb.querySelector('img').alt;
@@ -70,7 +68,6 @@ class ProductPage extends BuildMasterApp {
 
 
     initProductForms() {
-        // Консультация в футере
         const consultFooterBtn = document.getElementById('consultFooterBtn');
         if (consultFooterBtn) {
             consultFooterBtn.addEventListener('click', () => {
@@ -80,15 +77,5 @@ class ProductPage extends BuildMasterApp {
     }
 }
 
-// Инициализация страницы товара при загрузке DOM   
-// document.addEventListener('DOMContentLoaded', () => {
-//     // Проверяем, находимся ли мы на странице товара
-//     if (document.querySelector('.product-main') || 
-//         window.location.pathname.includes('product.html')) {
-        
-//         const productPage = new ProductPage();
-//         console.log('Product page initialized!');
-//     }
-// });
 
 export { ProductPage };
