@@ -902,7 +902,23 @@
     }
 }
 
+@media (max-width: 567px) {
+  .product-main {
+      padding-top: 95px;
+  }
+  .product-gallery .gallery-main .product-badge {
+    font-size: 9px;
+  }
+}
+
 @media (max-width: 480px) {
+    .product-main {
+      padding-top: 85px;
+    }
+    .product-gallery .gallery-main .product-badge {
+      font-size: 8px;
+      left: 0px;
+    }
     .breadcrumbs-list {
         font-size: 12px;
     }

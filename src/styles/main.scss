@@ -505,7 +505,7 @@ header {
   letter-spacing: 1px;
 }
 
-/* Categories */
+
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -520,7 +520,9 @@ header {
   box-shadow: var(--shadow-md);
   transition: var(--transition);
   position: relative;
-  height: 100%;
+  height: 420px; 
+  display: flex;
+  flex-direction: column; 
   
   &:hover {
     transform: translateY(-10px);
@@ -531,6 +533,7 @@ header {
 .category-image {
   height: 200px;
   overflow: hidden;
+  flex-shrink: 0; 
   
   img {
     width: 100%;
@@ -546,22 +549,31 @@ header {
 
 .category-content {
   padding: 24px;
+  flex: 1;
+  display: flex; 
+  flex-direction: column;
+  min-height: 0; 
 }
 
 .category-title {
   font-size: 20px;
   margin-bottom: 12px;
   color: var(--secondary);
+  flex-shrink: 0;
 }
 
 .category-description {
   color: var(--gray);
   margin-bottom: 20px;
   font-size: 15px;
+  line-height: 1.5;
+  flex: 1; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .category-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
   color: var(--primary);
@@ -569,12 +581,14 @@ header {
   text-decoration: none;
   font-size: 14px;
   transition: var(--transition);
+  flex-shrink: 0; 
+  margin-top: auto; 
+  padding-top: 10px;
   
   &:hover {
     gap: 12px;
   }
 }
-
 /* Tabs */
 .tabs-container {
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
@@ -586,6 +600,7 @@ header {
 .tabs-header {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
   margin-bottom: 40px;
   flex-wrap: wrap;
   justify-content: center;
@@ -1173,10 +1188,6 @@ footer {
 
   //tabs
 
-  .tabs-header {
-    flex-direction: column;
-  }
-
   .tabs-container {
     display: flex;
     flex-direction: column-reverse;
@@ -1185,7 +1196,23 @@ footer {
 }
 
 
-/* Small Mobile (до 479px) */
+@media (max-width: 567px) {
+  .details-tabs .tabs-header {
+    margin-top: 15px;
+  }
+} 
+
+@media (max-width: 415px) {
+    .tabs-header{
+      flex-direction: column;
+    }
+
+    .details-tabs {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+}
+
 @media (max-width: 479px) {
     .hero-buttons {
         gap: 6px;
