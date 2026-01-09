@@ -1,3 +1,6 @@
+import TabSwitcher from "./TabSwitcher";
+// import { CallModal } from "./Modal";
+
 class BuildMasterApp {
     constructor() {
         this.init();
@@ -11,6 +14,7 @@ class BuildMasterApp {
         this.initSmoothScroll();
         this.initAnimations();
         this.bindEvents();
+        this.initModal();
     }
 
     initMobileMenu() {
@@ -151,12 +155,14 @@ class BuildMasterApp {
                 this.showNotification(`Спасибо за подписку! На адрес ${email} отправлено письмо с подтверждением.`, 'success');
             });
         }
+    }
 
-        const callBtn = document.querySelector('.call-btn');
-        if (callBtn) {
-            callBtn.addEventListener('click', () => {
-                this.showNotification('Наш менеджер свяжется с вами в ближайшее время!');
-            });
+    initModal() {
+        try {
+            this.modal = new CallModal();
+            console.log('Модальное окно инициализировано');
+        } catch (error) {
+            console.error('Ошибка при инициализации модального окна:', error);
         }
     }
 
@@ -311,6 +317,9 @@ class BuildMasterApp {
 document.addEventListener('DOMContentLoaded', () => {
     const app = new BuildMasterApp();
     console.log('BuildMaster app initialized!');
+
+    const galleryTabs = new TabSwitcher('.product-gallery');
 });
+
 
 export { BuildMasterApp };
